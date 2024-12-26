@@ -117,6 +117,7 @@ namespace ortcv
   class LITE_EXPORTS YOLOv6;                     // [103] * reference: https://github.com/meituan/YOLOv6
   class LITE_EXPORTS FaceMesh;                   // [104] * reference: https://github.com/google/mediapipe/tree/master/mediapipe/graphs/face_mesh
   class LITE_EXPORTS IrisLandmarks;              // [105] * reference: https://github.com/google/mediapipe/tree/master/mediapipe/graphs/iris_tracking
+  class LITE_EXPORTS YoloFaceV8;                 // [106] * reference: https://github.com/derronqi/yolov8-face
 }
 
 namespace ortnlp
@@ -124,6 +125,11 @@ namespace ortnlp
   class LITE_EXPORTS TextCNN; // todo
   class LITE_EXPORTS ChineseBert; // todo
   class LITE_EXPORTS ChineseOCRLite; // todo
+}
+
+namespace ortsd
+{
+    class LITE_EXPORTS Clip; // [1] * reference: https://github.com/openai/CLIP
 }
 
 namespace ortcv
@@ -141,4 +147,11 @@ namespace ortasr
   using core::BasicOrtHandler;
   using core::BasicMultiOrtHandler;
 }
+
+namespace ortsd
+{
+    using core::BasicOrtHandler;
+    using core::BasicMultiOrtHandler;
+}
+
 #endif //LITE_AI_ORT_ORT_CORE_H
